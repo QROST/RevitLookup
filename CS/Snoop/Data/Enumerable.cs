@@ -1,6 +1,6 @@
 #region Header
 //
-// Copyright 2003-2020 by Autodesk, Inc. 
+// Copyright 2003-2021 by Autodesk, Inc. 
 //
 // Permission to use, copy, modify, and distribute this software in
 // object code form for any purpose and without fee is hereby granted, 
@@ -71,7 +71,7 @@ namespace RevitLookup.Snoop.Data
                 {
                     var elementId = iter.Current as Autodesk.Revit.DB.ElementId;
 
-                    if (elementId != null && doc != null)
+                    if (elementId != null && doc != null && elementId.IntegerValue > 0)
                         m_objs.Add(doc.GetElement(elementId)); // it's more useful for user to view element rather than element id.
                     else
                         m_objs.Add(iter.Current);

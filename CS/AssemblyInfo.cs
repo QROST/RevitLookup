@@ -1,6 +1,6 @@
 #region Header
 //
-// Copyright 2003-2020 by Autodesk, Inc. 
+// Copyright 2003-2021 by Autodesk, Inc. 
 //
 // Permission to use, copy, modify, and distribute this software in
 // object code form for any purpose and without fee is hereby granted,
@@ -32,7 +32,7 @@ using System.Reflection;
 [assembly: AssemblyConfiguration( "" )]
 [assembly: AssemblyCompany( "Autodesk Inc." )]
 [assembly: AssemblyProduct( "RevitLookup" )]
-[assembly: AssemblyCopyright( "Copyright (C) 2003-2020 by Autodesk Inc." )]
+[assembly: AssemblyCopyright( "Copyright (C) 2003-2021 by Autodesk Inc." )]
 [assembly: AssemblyTrademark( "" )]
 [assembly: AssemblyCulture( "" )]
 
@@ -152,6 +152,24 @@ using System.Reflection;
 // 2020-04-14 2021.0.0.1 integrated pull request #58 by @harrymattison with solution changes for multi-release building
 // 2020-10-20 2021.0.0.5 integrated pull request #63 by @swfaust to update command registration and remove obsolete test framework command
 // 2020-10-20 2021.0.0.6 eliminated deprecated unit api usage
+// 2020-11-09 2021.0.0.7 integrated pull request #64 by @peterhirn to update CI for Revit 2021
+// 2020-12-04 2021.0.0.8 integrated pull request #66 by @RevitArkitek adding handlers for View GetTemplateParameterIds and GetNonControlledTemplateParameterIds
+// 2020-12-06 2021.0.0.9 locally disable warning CS0618 `DisplayUnitType` is obsolete for one specific use case
+// 2021-01-11 2021.0.0.10 increment copyright year
+// 2021-01-12 2021.0.0.11 integrated pull request #67 by @peterhirn to update timestamp server from Verisign to digicert
+// 2021-02-01 2021.0.0.12 integrated pull request #69 by @RevitArkitek adding handler for the GetSplitRegionOffsets method to address issue #68 Split Region Offsets (2021)
+// 2021-02-09 2021.0.0.13 integrated pull request #71 by @RevitArkitek adding handler for ScheduleDefinition.GetField to address issue #70
+// 2021-04-15 2022.0.0.0 flat migration to Revit 2022
+// 2021-04-15 2022.0.0.1 integrated pull request #74 by @peterhirn setting up CI to Revit 2022
+// 2021-04-15 2022.0.0.2 integrated pull request #75 by @peterhirn to fix CI for Revit 2022 and non-dotnet-core project file
+// 2021-04-15 2022.0.0.3 integrated pull request #73 by @mphelt to wrap snoop in temporary transaction allowing to snoop PlanTopologies
+// 2021-04-15 2022.0.0.3 reset Revit API assembly DLL references to Copy Local false
+// 2021-04-15 2022.0.0.4 upgraded to Visual Studio 2019 (from 2017) and adopted @peterhirn project and solution files
+// 2021-04-16 2022.0.0.5 integrated pull request #76 by @peterhirn to fix CI for new VS 2019 Revit 2022 dotnet-core csproj
+// 2021-05-07 2022.0.0.6 integrated pull request #77 by @RevitArkitek to get end points for curves
+// 2021-05-07 2022.0.0.7 integrated pull request #78 by @RevitArkitek to handle `TableData.GetSectionData`
+// 2021-05-14 2022.0.0.8 integrated pull request #80 by @WspDev to remove deprecated `ParameterType` usage
+// 2021-05-18 2022.0.0.9 integrated pull request #81 by @CADBIMDeveloper enhancing `ElementId` and Revit 2022 extensible storage support
 //
-[assembly: AssemblyVersion( "2021.0.0.6" )]
-[assembly: AssemblyFileVersion( "2021.0.0.6" )]
+[assembly: AssemblyVersion( "2022.0.0.9" )]
+[assembly: AssemblyFileVersion( "2022.0.0.9" )]
