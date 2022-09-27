@@ -1,0 +1,10 @@
+<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>RevitLookup</Name>
+        <Assembly>RevitLookup/RevitLookup.dll</Assembly>
+        <FullClassName>RevitLookup.Application</FullClassName>
+        <AddInId>356CDA5A-E6C5-4c2f-A9EF-B3222116B8C8</AddInId>
+        <VendorId>ADSK</VendorId>
+        <VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+    </AddIn>
+</RevitAddIns>
